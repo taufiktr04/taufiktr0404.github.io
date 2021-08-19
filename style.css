@@ -1,0 +1,303 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
+
+/* Variables */
+:root {
+  /* Colors */
+  --first-color: #242a2a;
+  --second-color: #f8f3f7;
+  --third-color: #e56e46;
+  --fourth-color: #434042;
+  --fifth-color: #fff;
+
+  /* Font */
+  --base-font: "Poppins", sans-serif;
+  --reguler-font-weight: 400;
+  --light-font-weight: 300;
+  --medium-font-weight: 500;
+  --bold-font-weight: 700;
+
+  /* Font size */
+  --normal-font-size: 1rem;
+  --h2-font-size: 2rem;
+  --h3-font-size: 1.5rem;
+  --big-font-size: 3.5rem;
+
+  /* Margins */
+  --mb-1: 0.5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  /* Z-Index */
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/* Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--base-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--normal-font-size);
+  color: var(--first-color);
+  text-align: justify;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--medium-font-weight);
+  text-transform: uppercase;
+  background-color: var(--first-color);
+  color: var(--second-color);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  max-width: max-content;
+  padding-right: var(--mb-6);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--medium-font-weight);
+}
+
+h1 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--bold-font-weight);
+  text-transform: uppercase;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Class CSS */
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "left right"
+    "bottom bottom";
+  grid-template-columns: 60% 40%;
+}
+
+.right {
+  grid-area: right;
+  border-left: 5px solid var(--fourth-color);
+  margin-right: var(--mb-2);
+  max-width: 100%;
+}
+
+.profile {
+  background-color: var(--first-color);
+  color: var(--second-color);
+}
+
+.name {
+  text-align: center;
+  min-width: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+.profile h2,
+.profile p {
+  padding: 0 var(--mb-2);
+}
+
+.prestasi {
+  margin-top: var(--mb-3);
+}
+
+.prestasi h2,
+.prestasi h3,
+.prestasi p {
+  padding-left: var(--mb-1);
+  margin: var(--mb-1) 0;
+}
+
+.bahasa {
+  margin-top: var(--mb-3);
+}
+
+.bahasa h2,
+.bahasa h3,
+.bahasa p {
+  padding-left: var(--mb-1);
+  margin: var(--mb-1) 0;
+}
+
+/* Left */
+.left {
+  grid-area: left;
+  width: 90%;
+}
+
+/* Kontak */
+.kontak {
+  display: grid;
+  grid-template-areas:
+    "h2 h2 h2"
+    "wa line wa-nomor"
+    "fb line fb-link"
+    "ig line ig-link"
+    "email line email-link";
+  grid-template-columns: minmax(2.5rem, 5%) 0.5% 1fr;
+  margin: var(--mb-4);
+}
+
+.kontak h2 {
+  grid-area: h2;
+  background-color: transparent;
+  color: var(--first-color);
+  font-weight: var(--bold-font-weight);
+}
+
+.bx {
+  font-size: var(--h2-font-size);
+  padding-right: var(--mb-2);
+}
+
+.bxs-phone-call {
+  grid-area: wa;
+}
+
+.bxl-facebook {
+  grid-area: fb;
+}
+
+.bxl-instagram {
+  grid-area: ig;
+}
+
+.bx-envelope {
+  grid-area: email;
+}
+
+.kontak div {
+  grid-area: line;
+  background-color: var(--fourth-color);
+}
+
+.nomor {
+  grid-area: wa-nomor;
+}
+
+.facebook {
+  grid-area: fb-link;
+}
+
+.instagram {
+  grid-area: ig-link;
+}
+
+.email {
+  grid-area: email-link;
+}
+
+.p-kontak {
+  padding-left: var(--mb-2);
+}
+
+.wa,
+.fb,
+.ig,
+.mail {
+  cursor: pointer;
+}
+
+.wa:hover,
+.fb:hover,
+.ig:hover,
+.mail:hover {
+  color: var(--third-color);
+}
+/* End of Kontak */
+
+/* Pendidikan */
+
+.pendidikan h2 {
+  padding-left: var(--mb-4);
+}
+
+.pendidikan h3,
+.pendidikan p {
+  padding: 0 var(--mb-4);
+  margin: var(--mb-1) 0;
+}
+/* End of Pendidikan */
+
+/* Pengalaman */
+.kerja h2 {
+  margin-top: var(--mb-4);
+  padding-left: var(--mb-4);
+}
+
+.kerja h3,
+.kerja p {
+  padding: 0 var(--mb-4);
+  margin: var(--mb-1) 0;
+}
+
+.keahlian {
+  margin-top: var(--mb-2);
+  border-top: 5px solid var(--fourth-color);
+}
+/* End of Pengalaman */
+
+/* Hobi */
+footer {
+  grid-area: bottom;
+  text-align: center;
+}
+
+footer h2 {
+  background-color: transparent;
+  color: var(--first-color);
+  max-width: 100%;
+  margin-top: var(--mb-3);
+}
+.icon-hobi {
+  background-color: var(--first-color);
+}
+
+.icon-hobi ul li {
+  color: var(--second-color);
+  display: inline-block;
+}
+
+.icon-hobi ul li i {
+  font-size: var(--h2-font-size);
+  padding: var(--mb-6) 0;
+}
+
+/* Breakpoint */
+/* Handphone */
+@media screen and (max-width: 480px) {
+  :root {
+    /* Font size */
+    --normal-font-size: 0.8rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1rem;
+    --big-font-size: 3rem;
+
+    /* Margins */
+    --mb-1: 0.2rem;
+    --mb-2: 0.7rem;
+    --mb-3: 1.2rem;
+    --mb-4: 1.7rem;
+    --mb-5: 2.2rem;
+    --mb-6: 2.7rem;
+  }
+}
