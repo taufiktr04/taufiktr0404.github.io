@@ -287,17 +287,17 @@ footer h2 {
 @media screen and (max-width: 480px) {
   :root {
     /* Font size */
-    --normal-font-size: 0.8rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1rem;
-    --big-font-size: 3rem;
+    --normal-font-size: 0.5rem;
+    --h2-font-size: 1rem;
+    --h3-font-size: 0.8rem;
+    --big-font-size: 2.5rem;
 
     /* Margins */
-    --mb-1: 0.2rem;
-    --mb-2: 0.7rem;
-    --mb-3: 1.2rem;
-    --mb-4: 1.7rem;
-    --mb-5: 2.2rem;
-    --mb-6: 2.7rem;
+    --mb-1: 0.1rem;
+    --mb-2: 0.5rem;
+    --mb-3: 1rem;
+    --mb-4: 1.5rem;
+    --mb-5: 2rem;
+    --mb-6: 2.5rem;
   }
 }
